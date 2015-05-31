@@ -1,0 +1,7 @@
+Month: March 2008
+-------------------
+Total Collected:    $ 26572.89
+Sales:              $ 25068.76
+County Sales Tax:   $   501.38
+State Sales Tax:    $  1002.75
+Total Sales Tax:    $  1504.13

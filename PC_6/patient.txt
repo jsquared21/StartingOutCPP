@@ -1,0 +1,8 @@
+
+        Patient hospital stay report
+----------------------------------------------------
+Number of days spent in the hospital :          10
+Daily rate                           : $   1000.00
+Charges for hospital services        : $    500.00
+Hospital medication charges          : $    600.00
+Total charges                        : $  11100.00

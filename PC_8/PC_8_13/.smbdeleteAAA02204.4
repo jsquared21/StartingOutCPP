@@ -1,0 +1,25 @@
+// DrinkMach.h -- DrinkMach specification file
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct DrinkS
+{
+		string Name;
+		double Price;
+		int InStock;
+		DrinkS()
+		{ Name = " "; Price = 0.0; InStock = 0; }
+		DrinkS(string a, double p, int i)
+		{ Name = a; Price = p; InStock = i; }
+
+
+};
+
+class DrinkMach
+{
+    public:
+    	DrinkS D[5];
+    	DrinkMach();
+};

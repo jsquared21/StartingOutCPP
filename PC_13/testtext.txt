@@ -1,0 +1,17 @@
+Testing for the end of a file is accomplished by calling the eof member function, as you
+learned in Chapter 5. The eof function, however, is not the best way to determine whether
+there is still data left in the file when reading from the file using the extraction operator.
+Depending on whether the file contains whitespace after the last item, code using eof to
+check for the end of a file will either miss the last data item in the file or read the last data
+item twice. A better way to determine if there is data left in the file is to attempt a read, and
+then call the fail function to find out if the read was successful. For example, the following
+code fragment will read and print to the screen all numbers stored in a file:
+There is another way of testing whether a read operation was successful. This method is
+based on the fact that the extraction operator >> returns a value that can be tested to determine
+the success of the operation. Thus the attempt to read and the subsequent test for success
+can be done by putting the read operation as the test for loop continuation in a while
+loop as follows:
+Notice that the initial read outside the loop and the second read at the end of the loop are
+both eliminated because they are folded into the loop test.
+The eof function can reliably be used to test for end of data in binary files because there
+are no whitespace separators in that kind of file. Binary files are covered in a later section.
